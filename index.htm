@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>CENTROKIDS</title>
+        
+    <script src="arquivos/js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="arquivos/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="arquivos/css/animate.min.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110150946-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110150946-2');
+</script>
+
+
+<script type="text/javascript">
+ 
+  if (screen.width < 800) {
+    window.location = "http://centrokids.com.br/mobile.htm";
+  }
+  
+
+// INÍCIO AUTO SMOTH SCROLL
+
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+
+
+// FINAL AUTO SMOTH SCROLL
+
+  
+  
+</script>	
+
+<style type="text/css">
+
+@font-face { font-family: Dosis; src: url('arquivos/fonts/Dosis.woff'); } 
+@font-face { font-family: Dosis; font-weight: bold; src: url('arquivos/fonts/DosisBold.woff');}
+
+
+
+* {margin:0; padding: 0;}
+
+body,html{
+  font-family: Dosis, sans-serif;
+  height:100%;
+}
+
+
+.parallax{
+  height:100%;
+  background-attachment:fixed; /* esta linha faz o efeito parallax-fake */
+  background-size: cover; /* esta linha faz o mesmo que 'width 100%' */
+ 
+}
+
+
+#pg-um {
+    background-image:url(arquivos/img/nene.jpg);
+    background-position: center;
+    min-height:600px; 
+    text-shadow:0 0 5px black;
+    color:white;
+}
+
+
+#pg-dois {
+    background-image:url(arquivos/img/gemeos.jpg);
+	background-position: center;
+	min-height:750px; 
+	min-width:650px;
+    color:white;
+}
+
+
+#pg-quatro {
+    background-image:url(arquivos/img/menina.jpg);
+    background-position: center;
+    color:white;    
+} 	  	 
+
+#pg-cinco {min-height:700px;}
+
+.botao {
+	margin-left:20px; margin-right:20px;
+	margin-bottom:30px;
+	border: 2px solid white;
+	border-radius:4px;
+	background:none;
+	padding:5px 15px 5px 15px;
+}
+
+.botao:hover {
+	background-color:white;
+	color:black;
+	border: 2px solid black;
+	border-radius:4px;
+}
+
+.botao:active {
+	background-color:black;
+	color:white;
+}
+
+.botao:focus {
+	outline:0;
+}
+
+.botao-preto {
+	margin-left:20px; margin-right:20px;
+	margin-bottom:30px;
+	border: 2px solid black;
+	border-radius:4px;
+	background:none;
+	padding:5px 15px 5px 15px;
+}
+
+.botao-preto:hover {
+	background-color:black;
+	color:white;
+	border: 2px solid black;
+	border-radius:4px;
+}
+
+.botao-preto:active {
+	background-color:black;
+	color:white;
+}
+
+.botao-preto:focus {
+	outline:0;
+}
+
+.img-circle {
+	border:1px solid black;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 5s; /* Safari 4+ */
+  -moz-animation:    fadeIn 5s; /* Fx 5+ */
+  -o-animation:      fadeIn 5s; /* Opera 12+ */
+  animation:         fadeIn 5s; /* IE 10+, Fx 29+ */
+}
+
+a.link-branco-branco {text-shadow:0 0 5px black; color: white;}
+a.link-branco-branco:link  {text-shadow:0 0 5px black; color: white;}
+a.link-branco-branco:visited {text-shadow:0 0 5px black; color: white;}
+a.link-branco-branco:hover {text-shadow:0 0 5px black; color: white;}
+a.link-branco-branco:active {text-shadow:0 0 5px black; color: white;}
+
+a.link-branco {text-shadow:0 0 5px black; color: white;}
+a.link-branco:link  {text-shadow:0 0 5px black; color: white;}
+a.link-branco:visited {text-shadow:0 0 5px black; color: white;}
+a.link-branco:hover {text-shadow:0 0 5px black; color: black;}
+a.link-branco:active {text-shadow:0 0 5px black; color: white;}
+
+a.link-preto {color: black;}
+a.link-preto:link  {text-decoration: none; color: black;}
+a.link-preto:visited {text-decoration: none; color: black;}
+a.link-preto:hover {text-decoration: none; color: white;}
+a.link-preto:active {text-decoration: none; color: black;}
+
+
+</style>
+</head>
+
+<body>
+
+
+<!--==========================================================
+
+				PRIMEIRA PÁGINA
+
+============================================================-->  
+
+<div id="pg-um" class='parallax center-block'>
+
+
+     <p style="padding:10px 25px 0 25px; font-size:1.4em;">
+     
+     	<span style="font-size:1.1em">
+     
+     		CENTRO<span style="font-weight:bold;">KIDS</span>
+     	
+     	</span>
+     
+     	<span style="float:right;">
+     
+     		<a href="http://luthianacarpes.com.br" style="color:white; text-decoration:none;">OTORRINO</a> &nbsp; 
+     
+     		<a href="http://pneumokids.com" style="color:white; text-decoration:none;">PNEUMO</a> &nbsp;
+     
+     		GASTRO &nbsp; 
+     
+     		<a href="http://urokids.com.br" style="color:white; text-decoration:none;">URO</a> &nbsp;
+     
+     		✆ 3336-3533
+     	</span>
+     </p>
+     
+     
+     
+     
+     <div id="titulo" style="font-size:2.6em; text-align: center; padding-top:250px;" class="animated fadeIn">
+     
+     	<p style="margin-bottom:-20px;"> P O R T A L </p>
+     	
+     	<p style="font-size:3em;">CENTRO<span style="font-weight:bold;">KIDS</span></p>
+     	
+     	<p style="margin-top:-25px"> CLÍNICA &nbsp; MULTIESPECIALIDADES </p>
+ 
+     </div>
+
+
+	<div style="text-shadow:0 0 5px black">
+			
+		<a href="#pg-dois" class="link-branco-branco">
+		
+			<div style="position: absolute; bottom:10px; left:50%; font-size:2em;">
+				<p><span class="glyphicon glyphicon-chevron-down"></span></p> 
+			</div>
+
+		</a>
+	
+	</div>
+
+	
+</div>
+
+
+
+
+<!--==========================================================
+
+				SEGUNDA PÁGINA
+
+============================================================-->  
+<div id="pg-dois" class="container-fluid parallax text-center">
+
+
+	<div id="titulo-2">	
+
+		<p 	style="margin:0 30px 5px 30px; font-size:4em; "> 
+		
+			CENTRO<span style="font-weight:bold">KIDS</span>
+	
+		</p>
+
+		<p 	style="margin:0 30px 30px 30px; font-size:2em;"> 
+		
+			Nosso time de profissionais atua em múltiplas <br />
+		
+			áreas da medicina de alta complexidade no cuidado <br />
+		
+			de crianças e adultos.			
+	
+		</p>		
+	
+		<a href="#pg-tres" class="link-branco">
+		
+			<button class="botao" style="font-size:1.5em;">
+				CONHEÇA O NOSSO TIME &nbsp; &nbsp; &darr;
+			</button> 		
+		
+		</a>
+				
+	</div>
+
+</div>
+
+
+
+
+<!--==========================================================
+
+				TERCEIRA PÁGINA
+
+============================================================-->  
+<div id="pg-tres" class="text-center">
+
+
+	<p 	style="margin:0 30px 50px 30px; font-size:4em; "> 
+		
+		<br/>OS PROFISSIONAIS
+	
+	</p>
+
+
+	<!-- INÍCIO TELA GRANDE - 5 ítens em duas linhas-->  
+	<div class="container-fluid hidden-xs hidden-sm hidden-md">
+	
+		<div id="linha-x" class="row" style="margin-bottom:30px;">
+	
+			<div class="col-lg-offset-1 col-lg-2">
+				<img class="img-circle" src="arquivos/img/three1.jpg">
+				<span style="font-weight:bold">
+					<br /> Otorrinolaringologia / <br/> Otorrinolaringologia Pediátrica <br />
+				</span>
+				Dra. Luthiana Carpes
+			</div>
+
+			<div class="col-lg-2">
+				<img class="img-circle" src="arquivos/img/three1.png">
+				<span style="font-weight:bold">
+					<br /> Pneumologia Pediátrica / <br /> Fibrose Cística <br />
+				</span>
+				Dr. Leonardo A. Pinto
+			</div>
+
+			<div class="col-lg-2">
+				<img class="img-circle" src="arquivos/img/three3.jpg">
+				<span style="font-weight:bold">
+					<br /> Pneumologia Pediátrica / <br /> Fibrose Cística <br />
+				</span>
+				Dra. Camila Parreira
+			</div>
+
+			<div class="col-lg-2">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three4.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Infectologia Pediátrica <br />
+				</span>
+				Dr. Marcelo Scotta
+			</div>
+		
+			<div class="col-lg-2">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three5.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Toxoplasmose Congênita <br />
+				</span>
+				Dra. Eleonor Lago
+			</div>
+	
+		</div>
+		
+		<div id="linha-y" class="row">
+	
+			<div class="col-lg-offset-1 col-lg-2">
+				<img class="img-circle" src="arquivos/img/three6.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Gastroenterologia Pediátrica /<br/> Nutrologia <br />
+				</span>
+				Dr. José Vicente Spolidoro
+			</div>
+
+			<div class="col-lg-2">
+				<img class="img-circle" src="arquivos/img/three7.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Gastroenterologia Pediátrica /<br/> Nutrologia <br />
+				</span>
+				Dra. Patrícia Edom
+			</div>
+
+			<div class="col-lg-2">
+				<img class="img-circle" src="arquivos/img/three8.png">	
+				<span style="font-weight:bold;">
+					<br/> Urologia /<br/> Urologia Pediátrica <br />
+				</span>
+				Dr. Claudemir Trapp
+			</div>
+
+			<div class="col-lg-2">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three9.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Nefrologia Pediátrica <br />
+				</span>
+				Dra. Ana Verçosa
+			</div>
+		
+			<div class="col-lg-2">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three10.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Cirurgia Cardíaca <br />
+				</span>
+				Dr. Nicásio Tanaka
+			</div>
+	
+		</div>
+
+	</div>
+	<!-- FINAL TELA GRANDE -->  
+
+
+	<!-- INÍCIO TELA MÉDIA - 3 linhas com 3 ítens e uma linha com um ítem no final -->  
+	<div class="container hidden-xs hidden-sm hidden-lg">
+	
+		<div id="linha-a" class="row" style="margin-bottom:30px;">
+	
+			<div class="col-md-4">
+				<img class="img-circle" src="arquivos/img/three1.jpg">
+				<span style="font-weight:bold">
+					<br />Otorrinolaringologia / <br/> Otorrinolaringologia Pediátrica <br />
+				</span>
+				Dra. Luthiana Carpes
+			</div> 
+
+			<div class="col-md-4">
+				<img class="img-circle" src="arquivos/img/three1.png">
+				<span style="font-weight:bold">
+					<br /> Pneumologia Pediátrica / <br /> Fibrose Cística <br />
+				</span>
+				Dr. Leonardo A. Pinto
+			</div>
+
+			<div class="col-md-4">
+				<img class="img-circle" src="arquivos/img/three3.jpg">
+				<span style="font-weight:bold">
+					<br /> Pneumologia Pediátrica / <br /> Fibrose Cística <br />
+				</span>
+				Dra. Camila Parreira
+			</div>
+			
+		</div>
+
+		<div id="linha-b" class="row" style="margin-bottom:30px;">
+	
+			<div class="col-md-4">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three4.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Infectologia Pediátrica <br />
+				</span>
+				Dr. Marcelo Scotta
+			</div> 
+
+			<div class="col-md-4">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three5.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Toxoplasmose Congênita <br />
+				</span>
+				Dra. Eleonor Lago
+			</div>
+
+			<div class="col-md-4">
+				<img class="img-circle" src="arquivos/img/three6.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Gastroenterologia Pediátrica /<br/> Nutrologia <br />
+				</span>
+				Dr. José Vicente Spolidoro
+			</div>
+			
+		</div>
+
+		<div id="linha-c" class="row" style="margin-bottom:30px;">
+	
+			<div class="col-md-4">
+				<img class="img-circle" src="arquivos/img/three7.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Gastroenterologia Pediátrica /<br/> Nutrologia <br />
+				</span>
+				Dra. Patrícia Edom
+			</div> 
+
+			<div class="col-md-4">
+				<img class="img-circle" src="arquivos/img/three8.png">	
+				<span style="font-weight:bold;">
+					<br/> Urologia /<br/> Urologia Pediátrica <br />
+				</span>
+				Dr. Claudemir Trapp
+			</div>
+
+			<div class="col-md-4">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three9.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Nefrologia Pediátrica <br />
+				</span>
+				Dra. Ana Verçosa
+			</div>
+			
+		</div>
+
+		<div id="linha-d" class="row" style="margin-bottom:30px;">
+	
+			<div class="col-md-12">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three10.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Cirurgia Cardíaca <br />
+				</span>
+				Dr. Nicásio Tanaka
+			</div> 
+
+		</div>
+
+	
+	</div>
+	<!-- FINAL TELA MÉDIA -->  
+	
+
+	<!-- INÍCIO TELA PEQUENA - 5 linhas com 2 ítens em cada. -->  
+	<div class="hidden-md hidden-lg">
+
+		<div id="linha-1" class="row" style="margin-bottom:20px;">
+	
+			<div class="col-sm-offset-1 col-sm-5" style="margin-bottom:20px;">
+				<img class="img-circle" src="arquivos/img/three1.jpg">
+				<span style="font-weight:bold">
+					<br />Otorrinolaringologia / <br/> Otorrinolaringologia Pediátrica <br />
+				</span>
+				Dra. Luthiana Carpes
+			</div>
+
+			<div class="col-sm-5">
+				<img class="img-circle" src="arquivos/img/three1.png">
+				<span style="font-weight:bold">
+					<br /> Pneumologia Pediátrica / <br /> Fibrose Cística <br />
+				</span>
+				Dr. Leonardo A. Pinto			
+			</div>
+
+		</div>
+
+		<div id="linha-2" class="row" style="margin-bottom:20px;">
+	
+			<div class="col-sm-offset-1 col-sm-5" style="margin-bottom:20px;">
+				<img class="img-circle" src="arquivos/img/three3.jpg">
+				<span style="font-weight:bold">
+					<br /> Pneumologia Pediátrica / <br /> Fibrose Cística <br />
+				</span>
+				Dra. Camila Parreira
+			</div>
+
+			<div class="col-sm-5">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three4.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Infectologia Pediátrica <br />
+				</span>
+				Dr. Marcelo Scotta
+			</div>
+
+		</div>
+
+		<div id="linha-3" class="row" style="margin-bottom:20px;">
+	
+			<div class="col-sm-offset-1 col-sm-5" style="margin-bottom:20px;">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three5.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Toxoplasmose Congênita <br />
+				</span>
+				Dra. Eleonor Lago
+			</div>
+
+			<div class="col-sm-5">
+				<img class="img-circle" src="arquivos/img/three6.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Gastroenterologia Pediátrica /<br/> Nutrologia <br />
+				</span>
+				Dr. José Vicente Spolidoro
+			</div>
+
+		</div>
+
+		<div id="linha-4" class="row" style="margin-bottom:20px;">
+	
+			<div class="col-sm-offset-1 col-sm-5" style="margin-bottom:20px;">
+				<img class="img-circle" src="arquivos/img/three7.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Gastroenterologia Pediátrica /<br/> Nutrologia <br />
+				</span>
+				Dra. Patrícia Edom
+			</div>
+
+			<div class="col-sm-5">
+				<img class="img-circle" src="arquivos/img/three8.png">	
+				<span style="font-weight:bold;">
+					<br/> Urologia /<br/> Urologia Pediátrica <br />
+				</span>
+				Dr. Claudemir Trapp
+			</div>
+
+		</div>
+
+		<div id="linha-5" class="row" style="margin-bottom:20px;">
+	
+			<div class="col-sm-offset-1 col-sm-5" style="margin-bottom:20px;">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three9.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Nefrologia Pediátrica <br />
+				</span>
+				Dra. Ana Verçosa
+			</div>
+
+			<div class="col-sm-5">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three10.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Cirurgia Cardíaca <br />
+				</span>
+				Dr. Nicásio Tanaka
+			</div>
+
+		</div>
+
+	</div> 
+	<!-- FINAL TELA PEQUENA -->  
+
+
+		<a href="#pg-quatro" class="link-preto">
+		
+			<button class="botao-preto" style="font-size:1.5em; margin-top:50px;">
+				CONTINUA  &nbsp; &nbsp; &darr;
+			</button> 		
+		
+		</a>
+
+
+	<div style="height:70px;"></div> 
+	<!-- espaçamento -->
+
+</div> 
+<!-- CONTAINER DA TERCEIRA PÁGINA -->  
+
+
+
+
+<!--==========================================================
+
+				QUARTA PÁGINA
+
+============================================================-->  
+
+<div id="pg-quatro" class='container-fluid four parallax text-center'>
+
+	<div id="titulo-3">
+	
+		<p 	style="margin:0 30px 5px 30px; font-size:4em; "> 
+		
+			CENTRO<span style="font-weight:bold">KIDS</span>
+	
+		</p>
+
+
+
+		<p 	style="margin:0 30px 30px 30px; font-size:2em;"> 
+		
+			Otorrino, pneumo, fibrose cística, infecto, <br />
+		
+			toxoplasmose congênita, urologia, nefro ou <br />
+		
+			cirurgia cardíaca.			
+	
+		</p>		
+	
+	</div>
+		
+
+		<a href="#pg-cinco" class="link-branco">
+		
+			<button class="botao" style="font-size:1.5em;">
+				SAIBA MAIS VISITANDO NOSSOS SITES &nbsp; &nbsp; &darr;
+			</button> 		
+		
+		</a>
+
+
+
+
+
+
+</div>  	
+
+	
+	
+	
+<!--==========================================================
+
+				QUINTA PÁGINA
+
+============================================================-->  
+<div id="pg-cinco" class="container text-center" style="height:100%;">
+
+
+
+
+  <!-- INÍCIO CARTÕES -->  
+  <div id="cartoes">
+
+
+	<p style="margin:0 30px 50px 30px; font-size:4em; "> 
+		
+		<br/>VISITE AGORA!
+	
+	</p>
+
+
+	<div class="row" style="padding-top:20px;">
+	
+		<div class="col-sm-6" style="padding-top:4px;">
+			<a href="http://luthianacarpes.com.br">
+				<img class="img-responsive center-block" src="arquivos/img/luthy.png">
+			</a>
+		</div>
+		
+		<div class="col-sm-6" style="padding-top:25px;">
+			<a href="http://leonardopinto.com.br">
+				<img class="img-responsive center-block" src="arquivos/img/pneumo-sombra.png">
+			</a>
+		</div>
+	</div>
+
+	<div class="row">
+
+		
+		<div class="col-sm-6" style="padding-top:19px;">	
+			<a href="http://claudemirtrapp.com.br">
+				<img class="img-responsive center-block" src="arquivos/img/claudemir-sombra.png">
+			</a>
+		</div>
+	
+		
+		<div class="col-sm-6">
+			<a href="http://urokids.com.br">
+				<img class="img-responsive center-block" src="arquivos/img/uro2.png">
+			</a>
+		</div>
+		
+	</div>
+
+
+		<a href="#pg-um" class="link-preto">
+		
+			<button class="botao-preto" style="font-size:1.5em; margin-top:50px;">
+				VOLTAR  &nbsp; &nbsp; &uarr;
+			</button> 		
+		
+		</a>
+
+
+
+
+  </div>  
+  <!-- FINAL CARTÕES -->  
+
+
+
+
+
+
+	<!-- MENSAGEM FINAL-->  
+	<div id="final" class="row" style="color:black; padding-top:40px; font-size:1.5em;">
+	
+		<div class="col-xs-6 text-left">
+		
+			© Copyright 2016 | CENTRO<spam style="font-weight:bold">KIDS</spam>
+		
+			 | <a href="mobile.htm">
+				Site Mobile
+			</a> 
+			
+		</div>
+	
+		<div class="col-xs-6 text-right">
+		
+			✆ 3336-3533
+		
+		</div>
+		
+	</div>
+
+</div>
+<!-- CONTAINER DA QUINTA PÁGINA -->  
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="arquivos/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="arquivos/js/bootstrap.min.js"></script>
+    
+<script>    
+
+	var animar1=true;
+	var animar2=true;
+	var animar3=true;
+	var animar4=true;
+	var animar5=true;
+	var animarA=true;
+	var animarB=true;
+	var animarC=true;
+	var animarD=true;
+	var animarX=true;
+	var animarY=true;
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+
+	document.getElementById('linha-1').style.visibility = 'hidden';
+	document.getElementById('linha-2').style.visibility = 'hidden';
+	document.getElementById('linha-3').style.visibility = 'hidden';
+	document.getElementById('linha-4').style.visibility = 'hidden';
+	document.getElementById('linha-5').style.visibility = 'hidden';
+	document.getElementById('linha-a').style.visibility = 'hidden';
+	document.getElementById('linha-b').style.visibility = 'hidden';
+	document.getElementById('linha-c').style.visibility = 'hidden';
+	document.getElementById('linha-d').style.visibility = 'hidden';
+	document.getElementById('linha-x').style.visibility = 'hidden';
+	document.getElementById('linha-y').style.visibility = 'hidden';
+	document.getElementById('cartoes').style.visibility = 'hidden';
+	
+	var alt = $(window).height();
+		
+	$("#titulo").css("padding-top",alt/2-170+"px");
+	$("#titulo-2").css("padding-top",alt/2-135+"px");
+	$("#titulo-3").css("padding-top",alt/2-135+"px");
+	$("#cartoes").css("padding-top",alt/2-350+"px");
+
+	
+	
+
+});
+
+$(window).resize(function() {
+
+	var alt = $(window).height();
+	
+	$("#titulo").css("padding-top",alt/2-139+"px");
+	$("#titulo-2").css("padding-top",alt/2-135+"px");
+	$("#titulo-3").css("padding-top",alt/2-135+"px");
+	$("#cartoes").css("padding-top",alt/2-350+"px");
+
+
+});
+
+
+$(window).scroll(function () {
+	var y = $(window).scrollTop(),
+        x = $('#linha-1').offset().top - $( window ).height() + 150;
+    if (y > x && animar1) {
+
+		animar1=false;
+
+		document.getElementById('linha-1').style.visibility = 'visible';		
+
+		$('#linha-1').addClass('animated fadeInLeft');
+    } 
+});
+
+$(window).scroll(function () {
+	var y = $(window).scrollTop(),
+        x = $('#linha-2').offset().top - $( window ).height() + 150;
+    if (y > x && animar2) {
+
+		animar2=false;
+		
+		document.getElementById('linha-2').style.visibility = 'visible';
+
+		$('#linha-2').addClass('animated fadeInRight');
+    } 
+});
+
+$(window).scroll(function () {
+	var y = $(window).scrollTop(),
+        x = $('#linha-3').offset().top - $( window ).height() + 150;
+    if (y > x && animar3) {
+
+		animar3=false;
+		
+		document.getElementById('linha-3').style.visibility = 'visible';
+
+		$('#linha-3').addClass('animated fadeInLeft');
+    } 
+});
+
+$(window).scroll(function () {
+	var y = $(window).scrollTop(),
+        x = $('#linha-4').offset().top - $( window ).height() + 150;
+    if (y > x && animar4) {
+
+		animar4=false;
+		
+		document.getElementById('linha-4').style.visibility = 'visible';
+
+		$('#linha-4').addClass('animated fadeInRight');
+    } 
+});
+
+$(window).scroll(function () {
+	var y = $(window).scrollTop(),
+        x = $('#linha-5').offset().top - $( window ).height() + 150;
+    if (y > x && animar5) {
+
+		animar5=false;
+		
+		document.getElementById('linha-5').style.visibility = 'visible';
+
+		$('#linha-5').addClass('animated fadeInLeft');
+    } 
+});
+
+$(window).scroll(function () {
+	var y = $(window).scrollTop(),
+        x = $('#linha-a').offset().top - $( window ).height() + 150;
+    if (y > x && animarA) {
+
+		animarA=false;
+
+		document.getElementById('linha-a').style.visibility = 'visible';		
+
+		$('#linha-a').addClass('animated fadeInLeft');
+    } 
+});
+
+$(window).scroll(function () {
+	var y = $(window).scrollTop(),
+        x = $('#linha-b').offset().top - $( window ).height() + 150;
+    if (y > x && animarB) {
+
+		animarB=false;
+		
+		document.getElementById('linha-b').style.visibility = 'visible';
+
+		$('#linha-b').addClass('animated fadeInRight');
+    } 
+});
+
+$(window).scroll(function () {
+	var y = $(window).scrollTop(),
+        x = $('#linha-c').offset().top - $( window ).height() + 150;
+    if (y > x && animarC) {
+
+		animarC=false;
+		
+		document.getElementById('linha-c').style.visibility = 'visible';
+
+		$('#linha-c').addClass('animated fadeInLeft');
+    } 
+});
+
+$(window).scroll(function () {
+	var y = $(window).scrollTop(),
+        x = $('#linha-d').offset().top - $( window ).height() + 150;
+    if (y > x && animarD) {
+
+		animarD=false;
+		
+		document.getElementById('linha-d').style.visibility = 'visible';
+
+		$('#linha-d').addClass('animated fadeInRight');
+    } 
+});
+
+$(window).scroll(function () {
+	var y = $(window).scrollTop(),
+        x = $('#linha-x').offset().top - $( window ).height() + 150;
+    if (y > x && animarX) {
+
+		animarX=false;
+
+		document.getElementById('linha-x').style.visibility = 'visible';		
+
+		$('#linha-x').addClass('animated fadeInLeft');
+    } 
+});
+
+$(window).scroll(function () {
+	var y = $(window).scrollTop(),
+        x = $('#linha-y').offset().top - $( window ).height() + 150;
+    if (y > x && animarY) {
+
+		animarY=false;
+		
+		document.getElementById('linha-y').style.visibility = 'visible';
+
+		$('#linha-y').addClass('animated fadeInRight');
+    } 
+});
+
+
+// Animação dos cartões
+$(window).scroll(function () {
+	var a = $(window).scrollTop();
+		b = $("#cartoes").offset().top - $( window ).height()+200;
+
+	if (a > b) {
+		
+		document.getElementById('cartoes').style.visibility = 'visible';
+
+		$("#cartoes").addClass("animated fadeIn");	
+	}
+
+});
+
+
+
+
+</script>
+</body>
+</html>
+		

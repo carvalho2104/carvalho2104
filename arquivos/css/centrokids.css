@@ -1,0 +1,73 @@
+.botao {
+	margin-left:20px; margin-right:20px;
+	margin-bottom:30px;
+	border: 2px solid white;
+	border-radius:4px;
+	background:none;
+	padding:5px 15px 5px 15px;
+}
+
+.botao:hover {
+	background-color:white;
+	color:black;
+	border: 2px solid black;
+	border-radius:4px;
+}
+
+.botao:active {
+	background-color:black;
+	color:white;
+}
+
+.botao:focus {
+	outline:0;
+}
+
+.botao-preto {
+	margin-left:20px; margin-right:20px;
+	margin-bottom:30px;
+	border: 2px solid black;
+	border-radius:4px;
+	background:none;
+	padding:5px 15px 5px 15px;
+}
+
+.botao-preto:hover {
+	background-color:black;
+	color:white;
+	border: 2px solid black;
+	border-radius:4px;
+}
+
+.botao-preto:active {
+	background-color:black;
+	color:white;
+}
+
+.botao-preto:focus {
+	outline:0;
+}
+
+.img-circle {
+	border:1px solid black;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 5s; /* Safari 4+ */
+  -moz-animation:    fadeIn 5s; /* Fx 5+ */
+  -o-animation:      fadeIn 5s; /* Opera 12+ */
+  animation:         fadeIn 5s; /* IE 10+, Fx 29+ */
+}
+
+a.link-branco {text-shadow:0 0 5px black; color: white;}
+a.link-branco:link  {text-shadow:0 0 5px black; color: white;}
+a.link-branco:visited {text-shadow:0 0 5px black; color: white;}
+a.link-branco:hover {text-shadow:0 0 5px black; color: black;}
+a.link-branco:active {text-shadow:0 0 5px black; color: white;}
+
+a.link-preto {color: black;}
+a.link-preto:link  {text-decoration: none; color: black;}
+a.link-preto:visited {text-decoration: none; color: black;}
+a.link-preto:hover {text-decoration: none; color: white;}
+a.link-preto:active {text-decoration: none; color: black;}
+

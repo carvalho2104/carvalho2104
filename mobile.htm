@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>CENTROKIDS</title>
+        
+    <script src="arquivos/js/jquery.min.js"></script>
+    <script src="arquivos/js/bootstrap.min.js"></script>
+
+
+    <!-- Bootstrap -->
+    <link href="arquivos/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="arquivos/css/animate.min.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110150946-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110150946-2');
+</script>
+
+
+
+
+<script type="text/javascript">
+ 
+//  if (screen.width > 800) {
+//    window.location = "http://centrokids.com.br";
+//  }
+  
+// INÍCIO AUTO SMOTH SCROLL
+
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+// FINAL AUTO SMOTH SCROLL
+  
+</script>	
+
+<style type="text/css">
+
+@font-face { font-family: Dosis; src: url('arquivos/fonts/Dosis.woff'); } 
+@font-face { font-family: Dosis; font-weight: bold; src: url('arquivos/fonts/DosisBold.woff');}
+
+* {margin:0; padding: 0;}
+
+body,html{
+  font-family: Dosis, sans-serif;
+}
+
+#pg-um {
+	background:url(arquivos/img/nene.jpg) center center;
+	background-size: cover;
+
+
+    text-shadow:0 0 5px black;
+}
+
+
+#pg-dois {
+
+    background:url(arquivos/img/gemeos.jpg) center center;
+   	background-size:cover;
+
+}
+
+#pg-tres {}
+
+#pg-quatro {
+    background:url(arquivos/img/menina.jpg) center center;
+  	background-size:cover;
+
+} 	  	 
+
+#pg-cinco {}
+
+.tela-inteira {
+	color: white;
+}
+
+
+.botao {
+	margin-left:20px; margin-right:20px;
+	margin-bottom:30px;
+	border: 1px solid white;
+	border-radius:4px;
+	background:none;
+	padding:2px 7px 2px 7px;
+}
+
+.botao:hover {
+	background-color:white;
+	color:black;
+	border: 1px solid white;
+	border-radius:3px;
+}
+
+.botao:active {
+	background:none;
+	color:black;
+}
+
+.botao:focus {
+	background:none;
+	color:white;
+	outline:0;
+}
+
+
+
+.botao-preto {
+	margin-left:20px; margin-right:20px;
+	margin-bottom:30px;
+	border: 2px solid black;
+	border-radius:4px;
+	background:none;
+	padding:2px 7px 2px 7px;
+}
+
+.botao-preto:hover {
+	background-color:black;
+	color:white;
+	border: 1px solid black;
+	border-radius:4px;
+}
+
+.botao-preto:active {
+	background-color:white;
+	color:black;
+}
+
+.botao-preto:focus {
+	color:black;
+	background-color:white;
+	outline:0;
+}
+
+.img-circle {
+	border:1px solid black;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 5s; /* Safari 4+ */
+  -moz-animation:    fadeIn 5s; /* Fx 5+ */
+  -o-animation:      fadeIn 5s; /* Opera 12+ */
+  animation:         fadeIn 5s; /* IE 10+, Fx 29+ */
+}
+
+a.link-branco {text-shadow:0 0 5px black; color: white;}
+a.link-branco:link  {text-shadow:0 0 5px black; color: white;}
+a.link-branco:visited {text-shadow:0 0 5px black; color: white;}
+a.link-branco:hover {text-shadow:0 0 5px black; color: black;}
+a.link-branco:active {text-shadow:0 0 5px black; color: white;}
+
+a.link-branco-branco {text-shadow:0 0 5px black; color: white;}
+a.link-branco-branco:link  {text-shadow:0 0 5px black; color: white;}
+a.link-branco-branco:visited {text-shadow:0 0 5px black; color: white;}
+a.link-branco-branco:hover {text-shadow:0 0 5px black; color: white;}
+a.link-branco-branco:active {text-shadow:0 0 5px black; color: white;}
+
+
+a.link-preto {color: black;}
+a.link-preto:link  {text-decoration: none; color: black;}
+a.link-preto:visited {text-decoration: none; color: black;}
+a.link-preto:hover {text-decoration: none; color: white;}
+a.link-preto:active {text-decoration: none; color: black;}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<!--==========================================================
+
+				PRIMEIRA PÁGINA
+
+============================================================-->  
+
+<div id="pg-um" class="container-fluid tela-inteira">
+
+
+
+
+		<div class="row" style="padding-top:15px; font-size:1.2em;">
+	
+			<div class="col-xs-6 text-left">
+		
+				<a href="#pg-dois" class="link-branco-branco">
+
+					&nbsp; CENTRO<spam style="font-weight:bold">KIDS</spam> 
+		
+				</a>
+		
+			</div>
+	
+	
+			<div class="col-xs-6 text-right">
+		
+ 				<a href="tel:33363533" style="color:white">
+
+					✆ 3336-3533 &nbsp;
+				
+				</a>
+		
+			</div>
+		
+		</div>
+	
+
+
+
+     <div id="titulo" class="text-center animated fadeIn" style="font-size:1.2em;" >
+     
+     	<p style="margin-bottom:-13px;"> P O R T A L </p>
+     	
+     	<p style="font-size:2.8em;">CENTRO<span style="font-weight:bold;">KIDS</span></p>
+     	
+     	<p style="margin-top:-20px"> CLÍNICA &nbsp; MULTIESPECIALIDADES </p>
+ 
+     </div>
+
+
+
+
+
+
+
+
+	<div id="seta" style="font-size:1.4em; text-shadow:0 0 5px black">
+			
+		<a href="#pg-dois" class="text-center link-branco-branco">
+		
+			<p><span class="glyphicon glyphicon-chevron-down"></span></p> 
+
+		</a>
+	
+	</div>
+	
+</div>
+
+
+<!--==========================================================
+
+				SEGUNDA PÁGINA
+
+============================================================-->  
+<div id="pg-dois" class="container-fluid tela-inteira text-center">
+
+	<div id="titulo-2">	
+
+		<p 	style="font-size:1.2em; "> 
+		
+			CENTRO<span style="font-weight:bold">KIDS</span>
+	
+		</p>
+
+		<p 	style="font-size:1.2em;"> 
+		
+			Nosso time de profissionais atua em múltiplas <br />
+		
+			áreas da medicina de alta complexidade no cuidado <br />
+		
+			de crianças e adultos.			
+	
+		</p>		
+	
+		<a href="#pg-tres" class="link-branco">
+		
+			<button class="botao" style="font-size:1em;">
+				CONHEÇA O NOSSO TIME &nbsp; &nbsp; &darr;
+			</button> 		
+		
+		</a>
+				
+	</div>
+
+	
+
+</div>
+
+
+
+
+<!--==========================================================
+
+				TERCEIRA PÁGINA
+
+============================================================-->  
+<div id="pg-tres" class="text-center container-fluid">
+
+
+	<p style=font-size:2em; "> 
+		
+		<br/>OS PROFISSIONAIS
+	
+	</p>
+
+	
+			<div style="padding-bottom:15px;">
+				<img class="img-circle" src="arquivos/img/three1.jpg">
+				<span style="font-weight:bold">
+					<br /> Otorrinolaringologia / <br/> Otorrinolaringologia Pediátrica <br />
+				</span>
+				Dra. Luthiana Carpes
+			</div>
+
+			<div style="padding-bottom:15px;">
+				<img class="img-circle" src="arquivos/img/three1.png">
+				<span style="font-weight:bold">
+					<br /> Pneumologia Pediátrica / <br /> Fibrose Cística <br />
+				</span>
+				Dr. Leonardo A. Pinto
+			</div>
+
+			<div style="padding-bottom:15px;">
+				<img class="img-circle" src="arquivos/img/three3.jpg">
+				<span style="font-weight:bold">
+					<br /> Pneumologia Pediátrica / <br /> Fibrose Cística <br />
+				</span>
+				Dra. Camila Parreira
+			</div>
+
+			<div style="padding-bottom:15px;">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three4.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Infectologia Pediátrica <br />
+				</span>
+				Dr. Marcelo Scotta
+			</div>
+		
+			<div style="padding-bottom:15px;">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three5.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Toxoplasmose Congênita <br />
+				</span>
+				Dra. Eleonor Lago
+			</div>
+		
+			<div style="padding-bottom:15px;">
+				<img class="img-circle" src="arquivos/img/three6.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Gastroenterologia Pediátrica /<br/> Nutrologia <br />
+				</span>
+				Dr. José Vicente Spolidoro
+			</div>
+
+			<div style="padding-bottom:15px;">
+				<img class="img-circle" src="arquivos/img/three7.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Gastroenterologia Pediátrica /<br/> Nutrologia <br />
+				</span>
+				Dra. Patrícia Edom
+			</div>
+
+			<div style="padding-bottom:15px;">
+				<img class="img-circle" src="arquivos/img/three8.png">	
+				<span style="font-weight:bold;">
+					<br/> Urologia /<br/> Urologia Pediátrica <br />
+				</span>
+				Dr. Claudemir Trapp
+			</div>
+
+			<div style="padding-bottom:15px;">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three9.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Nefrologia Pediátrica <br />
+				</span>
+				Dra. Ana Verçosa
+			</div>
+		
+			<div style="padding-bottom:15px;">
+				<img style="margin-bottom:10px;" class="img-circle" src="arquivos/img/three10.jpg">	
+				<span style="font-weight:bold;">
+					<br/> Cirurgia Cardíaca <br />
+				</span>
+				Dr. Nicásio Tanaka
+			</div>
+	
+		</div>
+
+
+</div> 
+
+
+<!--==========================================================
+
+				QUARTA PÁGINA
+
+============================================================-->  
+
+<div id="pg-quatro" class='container-fluid tela-inteira text-center'>
+
+	<div id="titulo-3">	
+
+		<p 	style="font-size:1.2em; "> 
+		
+			CENTRO<span style="font-weight:bold">KIDS</span>
+	
+		</p>
+
+		<p 	style="font-size:1.2em;"> 
+		
+			Otorrino, pneumo, fibrose cística, infecto, <br />
+		
+			toxoplasmose congênita, urologia, nefro ou <br />
+		
+			cirurgia cardíaca.			
+
+	
+		</p>		
+	
+		<a href="#pg-cinco" class="link-branco">
+		
+			<button class="botao" style="font-size:1em;">
+				SAIBA MAIS VISITANDO NOSSOS SITES &nbsp; &nbsp; &darr;
+			</button> 		
+		
+		</a>
+				
+	</div>
+
+
+
+</div>  	
+
+	
+	
+	
+<!--==========================================================
+
+				QUINTA PÁGINA
+
+============================================================-->  
+<div id="pg-cinco" class="container-fluid text-center">
+
+  <!-- INÍCIO CARTÕES -->  
+  <div id="cartoes">
+
+	
+		<div style="padding-top:20px; padding-bottom:25px;">
+			<a href="http://luthianacarpes.com.br" >
+				<img style="max-height:100px; "class="img-responsive center-block" src="arquivos/img/luthy.png">
+			</a>
+		</div>
+		
+		<div style="padding-bottom:1px;">
+			<a href="http://leonardopinto.com.br">
+				<img class="img-responsive center-block" src="arquivos/img/pneumo-sombra.png">
+			</a>
+		</div>
+		
+		<div style="padding-bottom:1px;">
+			<a href="http://claudemirtrapp.com.br">
+				<img class="img-responsive center-block" src="arquivos/img/claudemir-sombra.png">
+			</a>
+		</div>
+	
+		
+		<div style="padding-bottom:15px;">
+			<a href="http://urokids.com.br">
+				<img class="img-responsive center-block" src="arquivos/img/uro2.png">
+			</a>
+		</div>
+		
+
+
+
+  </div>
+  <!-- FINAL CARTÕES -->  
+
+
+  		<a href="#pg-um" class="link-preto">
+		
+			<button class="botao-preto" style="font-size:1.2em; margin-top:5px;">
+				VOLTAR  &nbsp; &nbsp; &uarr;
+			</button> 		
+		
+		</a>
+
+
+		<div class="row" style="padding-top:15px; font-size:1.2em;">
+	
+			<div class="col-xs-6 text-left">
+		
+				&nbsp; CENTRO<spam style="font-weight:bold">KIDS</spam> 
+				| <a href="index.htm">
+				Site Desktop
+				</a> 
+			
+			</div>
+	
+
+
+			<div class="col-xs-6 text-right">
+
+				<a href="tel:33363533" style="color:black">
+	
+					✆ 3336-3533 &nbsp;
+
+				</a>						
+
+			</div>
+		
+		</div>
+
+
+</div>
+<!-- CONTAINER DA QUINTA PÁGINA -->  
+
+
+    
+<script>    
+
+
+
+
+$(document).ready(function () {
+
+	var alt = $(window).height();
+		
+	var comp = $(window).width();
+	
+	$(".tela-inteira").css("height",alt+"px");
+	$(".tela-inteira").css("width",comp+"px");
+	
+	$("#titulo").css("padding-top",Math.round(alt/2)-100+"px");
+	$("#seta").css("padding-top",Math.round(alt/4)+"px");
+	$("#titulo-2").css("padding-top",Math.round(alt/2)-100+"px");
+	$("#titulo-3").css("padding-top",Math.round(alt/2)-100+"px");
+	
+});
+
+
+$(window).resize(function() {
+
+//  alert("The orientation has changed!");
+	
+	
+	var alt = $(window).height();
+		
+	var larg = $(window).width();
+	
+	$(".tela-inteira").css("height",alt+"px");
+	$(".tela-inteira").css("width",larg+"px");
+
+	
+	$("#titulo").css("padding-top",alt/2-100+"px");
+	$("#seta").css("padding-top",Math.round(alt/4)+"px");
+	$("#titulo-2").css("padding-top",Math.round(alt/2)-100+"px");
+	$("#titulo-3").css("padding-top",Math.round(alt/2)-100+"px");
+	
+	
+});
+
+
+</script>
+</body>
+</html>
+		
